@@ -19,7 +19,8 @@
     ".": {
       "import": "./dist/react-notifier.es.js",
       "require": "./dist/react-notifier.umd.js"
-    }
+    },
+    "./dist/style.css": "./dist/style.css"
   },
   "scripts": {
     "dev": "vite",
