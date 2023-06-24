@@ -52,6 +52,7 @@ export default function App () {
   return (
     <NotificationProvider>
       <Button />
+      <NotificationConsumer />
     </NotificationProvider>
   )
 }
