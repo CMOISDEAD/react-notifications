@@ -47,6 +47,7 @@ To start using the library you only need to envolve your notification space in t
 ```jsx
 import { NotificationProvider, NotificationConsumer } from "doom-react-notifications";
 import { Button } from "./components/Button";
+import "doom-react-notifications/dist/style.css"; // you can change the styles.
 
 export default function App () {
   return (
