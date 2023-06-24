@@ -1,0 +1,41 @@
+.notification {
+  width: 30vw;
+  padding: 5px;
+  margin: 5px;
+  border: solid 1px white;
+  background: black;
+  color: white;
+}
+
+.notification-success {
+  background: green;
+}
+
+.notification-error {
+  background: red;
+}
+
+.notification-warning {
+  background: orangered;
+}
+
+.notification-info {
+  background: skyblue;
+}
+
+.notification > .notification-title {
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+
+.notification > .notification-message {
+  font-style: italic;
+}
+
+/* Notification Consumer */
+
+.notification-container {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
