@@ -6,4 +6,10 @@ export {
   NotificationConsumer,
 } from "./core";
 export { useNotification } from "./hooks";
-export { Notification } from "./components";
+export {
+  Notification,
+  SuccesSvg,
+  ErrorSvg,
+  WarningSvg,
+  InfoSvg,
+} from "./components";

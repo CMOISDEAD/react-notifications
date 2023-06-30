@@ -1,7 +1,7 @@
 {
   "name": "doom-react-notifications",
   "private": false,
-  "version": "0.1.5",
+  "version": "0.1.10",
   "description": "A simple react notification system",
   "author": "camilodavila",
   "license": "MIT",

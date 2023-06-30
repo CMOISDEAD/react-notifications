@@ -11,7 +11,7 @@ const NotificationBox: FC<NotificationType> = ({
   const Icon = checkIcon(type);
   return (
     <div
-      className={`notification animated flex gap-2 content-center items-center notification-${type}`}
+      className={`notification animated notification-${type}`}
       onClick={onClick}
       id={`${id}`}
     >

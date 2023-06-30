@@ -1,9 +1,5 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 .notification {
-  @apply m-2 p-2 border border-neutral-500 rounded w-72 hover:cursor-pointer transition-colors;
+  @apply m-2 py-2 px-2 border border-neutral-500 rounded w-72 hover:cursor-pointer transition-colors flex gap-2 content-center items-center;
 }
 
 .notification.animated {
