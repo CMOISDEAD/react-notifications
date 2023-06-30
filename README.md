@@ -1,6 +1,6 @@
 <h1 align="center">react-notifications</h1>
 
-![doom react easy notifications](https://github.com/CMOISDEAD/react-notifications/assets/51010598/aefaef5d-a34f-4d49-941f-d109286de27d)
+![notifications_preview](https://github.com/CMOISDEAD/react-notifications/assets/51010598/5de81c6b-9023-4e20-ac0a-d0dfe98b5da8)
 
 <p align="center">:atom: react notifications made easy.</p>
 
