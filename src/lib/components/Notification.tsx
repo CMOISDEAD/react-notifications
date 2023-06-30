@@ -1,19 +1,22 @@
 import { useState, useEffect, FC } from "react";
 import { NotificationType } from "../types";
+import { checkIcon } from "../utils";
 
 const NotificationBox: FC<NotificationType> = ({
   id,
   type,
   title,
-  message,
   onClick,
 }: NotificationType) => {
+  const Icon = checkIcon(type);
   return (
-    <div className={`notification notification-${type}`} onClick={onClick}>
-      <p className="notification-title">
-        {title} <span style={{ fontSize: "11px" }}>id: {id}</span>
-      </p>
-      <p className="notification-message">{message}</p>
+    <div
+      className={`notification animated flex gap-2 content-center items-center notification-${type}`}
+      onClick={onClick}
+      id={`${id}`}
+    >
+      {Icon ? <Icon /> : ""}
+      <p className="notification-title">{title}</p>
     </div>
   );
 };
@@ -25,9 +28,7 @@ interface Props {
 
 export const Notification: FC<Props> = ({ notification, Custom }) => {
   const [isVisible, setIsVisible] = useState(true);
-  let Box = NotificationBox;
-
-  if (Custom) Box = Custom;
+  const Box = Custom ? Custom : NotificationBox;
 
   useEffect(() => {
     const timeout = setTimeout(() => {

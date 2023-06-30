@@ -1,39 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 .notification {
-  width: 30vw;
-  padding: 5px;
-  margin: 5px;
-  border: solid 1px white;
-  background: black;
-  color: white;
+  @apply m-2 p-2 border border-neutral-500 rounded w-72 hover:cursor-pointer transition-colors;
+}
+
+.notification.animated {
+  animation: fadeInThenOut 3s linear forwards;
 }
 
 .notification-success {
-  background: green;
+  @apply bg-green-500/60 border-green-700 hover:bg-green-500/50 hover:border-green-600;
 }
 
 .notification-error {
-  background: red;
+  @apply bg-red-500/60 border-red-700 hover:bg-red-500/50 hover:border-red-600;
 }
 
 .notification-warning {
-  background: orangered;
+  @apply bg-orange-500/60 border-orange-700 hover:bg-orange-500/50 hover:border-orange-600;
 }
 
 .notification-info {
-  background: skyblue;
+  @apply bg-blue-500/60 border-blue-700 hover:bg-blue-500/50 hover:border-blue-600;
 }
 
 .notification > .notification-title {
-  font-weight: bolder;
-  text-transform: uppercase;
+  @apply font-bold;
 }
 
 .notification > .notification-message {
   font-style: italic;
 }
 
-/* Notification Consumer */
+/* notification animations */
+@keyframes fadeInThenOut {
+  0%,
+  100% {
+    opacity: 0;
+  }
 
+  20%,
+  80% {
+    opacity: 1;
+  }
+}
+
+/* Notification Consumer */
 .notification-container {
   position: absolute;
   bottom: 0;
